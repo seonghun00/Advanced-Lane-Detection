@@ -54,10 +54,15 @@
 
 ## ⚙️ 실행 방법
 
-`update_version.ipynb` 파일을 열고 처음부터 끝까지 전체 셀을 실행하기만 하면 됩니다.
+1. Python 환경에서 `cv2`, `numpy`, `matplotlib`, `moviepy` 라이브러리가 설치되어 있어야 합니다.
+2. `update_version_test.ipynb`의 셀을 순서대로 실행합니다.
+3. 영상 변환 셀을 실행하면 `test_videos/project_video.mp4`를 입력받아 최종 결과인 `project_clip_result.mp4`를 생성합니다.
 
 ## 🎬 최종 결과 영상
 
 아래는 파이프라인을 통해 처리된 최종 차선 인식 결과 영상입니다.
 
-<video src="./project_clip_result.mp4" controls="controls" width="100%" muted="muted" autoplay="autoplay"></video>
+https://github.com/user-attachments/assets/d11651db-f51e-4fe3-aa41-52c01cea7fce
+
+
+
