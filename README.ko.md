@@ -4,9 +4,17 @@
 
 ##### [English](README.md) | **한국어**
 
-# 차선 인식 고도화 프로젝트 (Advanced Lane Detection)
+# 🚗 차선 인식 고도화 프로젝트 (Advanced Lane Detection)
+> **OpenCV를 활용하여 차량 주행 블랙박스 영상에서 차선을 안정적으로 인식하고, 도로 영역을 실시간으로 표시하는 시스템입니다.**
 
-이 프로젝트는 OpenCV를 활용하여 차량 주행 블랙박스 영상(`test_videos/project_video.mp4`)에서 차선을 안정적으로 인식하고, 시각화된 결과 영상(`project_clip_result.mp4`)을 추출하는 프로젝트입니다.
+`update_version.ipynb` 파일에는 파이프라인의 각 단계에 대한 설명과 테스트 과정이 한국어 주석과 함께 상세히 작성되어 있습니다.
+
+<p align="left">
+    <img src="https://img.shields.io/badge/Python_3.10-3776AB?logo=python&logoColor=white">
+    <img src="https://img.shields.io/badge/Jupyter_Notebook-F37626?logo=jupyter&logoColor=white">
+</p>
+
+본 프로젝트는 주행 중인 차량의 블랙박스 영상(`test_videos/project_video.mp4`)을 입력받아 카메라 렌즈 왜곡 보정, 버드아이 뷰(Bird's-eye View) 시점 변환, 슬라이딩 윈도우 기반 차선 추적 등 고도화된 컴퓨터 비전 파이프라인을 거쳐 시각화된 결과 영상(`project_clip_result.mp4`)을 추출하는 것이 목적입니다.
 
 `update_version.ipynb` 파일에는 파이프라인의 각 단계에 대한 설명과 테스트 과정이 한국어 주석과 함께 상세히 작성되어 있습니다.
 
@@ -46,12 +54,10 @@
 
 ## ⚙️ 실행 방법
 
-1. Python 환경에서 `cv2`, `numpy`, `matplotlib`, `moviepy` 라이브러리가 설치되어 있어야 합니다.
-2. `update_version_test.ipynb`의 셀을 순서대로 실행합니다.
-3. 영상 변환 셀을 실행하면 `test_videos/project_video.mp4`를 입력받아 최종 결과인 `project_clip_result.mp4`를 생성합니다.
+`update_version.ipynb` 파일을 열고 처음부터 끝까지 전체 셀을 실행하기만 하면 됩니다.
 
 ## 🎬 최종 결과 영상
 
 아래는 파이프라인을 통해 처리된 최종 차선 인식 결과 영상입니다.
 
-![최종 결과 영상](./project_clip_result.mp4)
+<video src="./project_clip_result.mp4" controls="controls" width="100%" muted="muted" autoplay="autoplay"></video>
