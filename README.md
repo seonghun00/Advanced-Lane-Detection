@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=80&section=header" width="100%" />
+</p>
+
+##### **English** | [한국어](README.ko.md)
+
 # Advanced Lane Finding Using Sliding Window Search
 The goals / steps of this project are the following:
 
